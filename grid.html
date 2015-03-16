@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <link rel="stylesheet" type="text/css" href ="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
+</head>
+<body>
+  <div class="top-section">
+    <div class="gridster">
+      <ul>
+        <li data-row="1" data-col="1" data-sizex="8" data-sizey='4'>
+          <div class="container">
+            <h1>About Me</h1>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit cupiditate natus iure obcaecati beatae, adipisci voluptates distinctio dolorum mollitia. Cupiditate atque eligendi aperiam beatae ex saepe, hic itaque laudantium nulla.
+              </p>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, sunt. Perspiciatis sit voluptas, dolorum, blanditiis nihil possimus atque facere provident vitae dignissimos distinctio nemo itaque officiis ipsam hic repellendus similique.  
+              </p>
+          </div>
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="4" data-sizey='4' >
+          <div class="profile-image"></div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="3" data-sizey='5' >
+          <div class="container">
+            <h2>Skills</h2> 
+            <ul>
+              <li>Ruby</li>
+              <li>Javascript</li>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>Backbone</li>
+              <li>JQuery</li>
+              <li>Angular</li>
+              <li>Meteor</li>
+              <li>AJAX</li>
+              <li>Bootstrap</li>
+              <li>Ruby on Rails</li>
+              <li>Sinatra</li>
+              <li>LESS</li>
+              <li>CoffeeScript</li>
+              <li>Git</li>
+            </ul>
+
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="4" data-sizey='2' >
+          <div class="container">
+            <h2>Social</h2> 
+              <div class="social-box"></div>
+              <div class="social-box"></div>
+              <div class="social-box"></div>
+              <div class="social-box"></div>
+              <div class="social-box"></div>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="8" data-sizey='2' >
+          <div class="container">
+            <h2>What I stand for</h2> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quibusdam, laborum. Cum quaerat voluptatem facilis fugiat ratione adipisci impedit quasi dicta, recusandae accusamus dolorem at.</p>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="4" data-sizey='4' >
+          <div class="container">
+            <h2>Project</h2> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit molestiae cumque aliquid ipsum, esse et accusantium eius beatae eligendi doloribus sequi architecto placeat quos hic nostrum provident recusandae velit voluptatum.
+            </p>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="4" data-sizey='4' >
+          <div class="container">
+            <h2>Project</h2> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia perferendis repellendus, magni laborum sapiente dignissimos cupiditate, labore qui velit similique ratione odit aut impedit, vitae perspiciatis nihil quia doloribus excepturi?
+            </p>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="3" data-sizey='3' >
+          <div class="container">
+            <h2>Project</h2> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, magni, accusantium. Delectus molestiae perspiciatis corporis aliquam culpa totam, laudantium ex iste autem, consequuntur eum eius alias quam magni quos rerum.
+            </p>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="3" data-sizey='3' >
+          <div class="container">
+            <h2>Project</h2> 
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit illum eligendi numquam eveniet aut perspiciatis sint minus perferendis laborum error ad nisi, laudantium, ipsum maiores quibusdam aperiam, voluptatibus velit optio.
+            </p>
+          </div> 
+        </li>
+
+        <li data-row="2" data-col="2" data-sizex="2" data-sizey='3' >
+          <div class="container">
+            <h2>Don't drag me!!!</h2> 
+          </div> 
+        </li>
+        
+
+      </ul>
+    </div>
+  </div>
+  <div class="mid-section">
+    
+
+  </div>
+
+  <script type="text/javascript" src="script/jquery.min.js"></script>
+  <script type="text/javascript" src="script/app.js"></script>
+  <script type="text/javascript" src="script/jquery.gridster.min.js"></script>
+  <script type="text/javascript">
+  
+  var gridster;
+
+  $(function(){
+    gridster= $('.gridster > ul').gridster({
+        widget_margins: [10,10],
+        widget_base_dimensions: [50, 50],
+        min_cols: 12
+    }).data('gridster');
+  });
+  </script>
+</body>
+</html>

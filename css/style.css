@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: x-small;
+    color: #666666;
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1 {
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+/*Top section*/
+
+.top-section{
+  position: relative;
+  padding: 8px 8px 32px 8px;
+  background-color: #c3eaf6;
+}
+
+ .top-section:after {
+        background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+        background-position: left-bottom;
+        background-repeat: repeat-x;
+        background-size: 32px 32px;
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 32px;
+    }
+
+/* Gridster styles */
+
+.demo:hover .gridster {
+    opacity: 1;
+}
+
+.gridster {
+    max-width: 100vw;
+    margin: 0 auto;
+    opacity: .8;
+    -webkit-transition: opacity .6s;
+    -moz-transition: opacity .6s;
+    -o-transition: opacity .6s;
+    -ms-transition: opacity .6s;
+    transition: opacity .6s;
+}
+
+.gridster .gs_w {
+    background: #eee;
+    cursor: pointer;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+li.gs-w{
+  background-color: white;
+  box-shadow: 1px 1px 1px gray;
+  list-style-type: none;
+}
+
+li.gs-w:hover {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+  z-index: 100;
+}
+
+/*profile*/
+
+.profile-image{
+  box-shadow: 1px 1px 1px gray;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 10%;
+  background-color: lightgray;
+}
+
+.profile-image:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 100;
+
+}
+/*container*/
+
+.container{
+  padding: 5%;
+}
+
+/*Social*/
+
+.social-box{
+  box-shadow: 1px 1px 1px gray;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  float: left;
+  background-color: #009587;
+}
+
+.social-box:hover, .social-box:focus, .social-box:active{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
